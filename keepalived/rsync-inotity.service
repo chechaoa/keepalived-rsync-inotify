@@ -1,0 +1,11 @@
+#File name: rsync-inotity.service
+#File path: /etc/systemd/system/rsync-inotity.service
+
+[Unit]
+Description=File instant rsync script
+
+[Service]
+ExecStart=/usr/bin/nohup /opt/data_realtime_rsync.sh  &
+
+[Install]
+WantedBy=multi-user.target
